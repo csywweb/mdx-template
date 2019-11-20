@@ -1,0 +1,27 @@
+---
+name: <%= name %>
+route: /<%= dir %>
+---
+
+import { Playground, PropsTable } from 'docz';
+import <%= name %> from './';
+import './style/index.scss';
+
+## 简介
+
+!!! 请在此处描述你的组件功能 !!!
+
+> Owner <%= author %>
+
+## 使用
+
+<Playground>
+  {() => {
+    return <div>test</div>;
+  }}
+</Playground>
+
+## API
+
+<PropsTable of={<%= name %>} />
+
