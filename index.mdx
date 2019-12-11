@@ -17,9 +17,16 @@ import './style/index.scss';
 ## 使用
 
 <Playground>
-  {() => {
-    return <div>test</div>;
-  }}
+    {() => {
+        class Test extends Component {
+            render() {
+                return (
+                    <<%= name %> />
+                );
+            }
+        }
+        return <Test />;
+    }}
 </Playground>
 
 ## API
